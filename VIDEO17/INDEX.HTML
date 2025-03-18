@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* elemetns selectors */
+        div{
+            background-color: red;
+        }
+        /* class selector */
+        .red{
+            background-color: rebeccapurple;
+        }
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /*child selector*/
+        div > p {
+            color: blue;
+            background-color: brown;
+
+        }
+        /* decendant selector */
+        div p {
+            color: rgb(1, 2, 2);
+            background-color: aquamarine;
+        }
+        /* universal selector */
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+       /* pseudo selector */
+       a:visited{
+        color: black;
+       }
+       a:link {
+        color: rgb(7, 158, 145);
+        background-color: darksalmon;
+       }
+       a:active{
+           background-color: burlywood !important;
+       }
+       a:hover{
+        background-color: rgb(251, 0, 0);
+       }
+       p:first-child{
+        background-color: cornflowerblue;
+       }
+       main p:nth-child(2){
+        background-color: limegreen;
+       }
+   
+    
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        hi i'm a div
+        <p>hi i'm a para under div</p>
+        <span>hi i'm  a span under div </span>
+        <article><P>hi i'm  a para under acrticel which is under div</P></article>
+    
+    </div>
+    <div id="green">
+        HI I'm a second  div 
+    </div>
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.chatgpt.com">gpt op</a>
+    <a href="https://www.chat.deepseek.com">this link is not visited till now </a>
+    <main>
+        <p>i'm 1st in main</p>
+        <p>i'm 2nd in mian</p>
+    </main>
+    
+</body>
+</html>

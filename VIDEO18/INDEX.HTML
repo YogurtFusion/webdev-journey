@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: blue;
+            background-color: black;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid rgb(26, 232, 15);
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: black;
+            background-color: rgb(40, 78, 46);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid rgb(26, 232, 15);
+            height: 200px;
+            box-sizing: border-box;
+        }
+        
+        .box3{
+            color: rgb(244, 212, 8);
+        }
+        /* here in box, box1 and box2 boxes  presnalises presnal one not genral boxes like box  */
+    </style>
+</head>
+<body>
+    <div class="box box1">I'm a box</div>
+    <div class="box box2">I'm another box</div>
+    <div class="box box3">I'm also another box</div>
+
+</body>
+</html>
