@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-SIZING UNITS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            height: 10vh;
+            /* this is not applied on inline comments */
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            min-height: 80vh;
+            font-size: 16px;
+        }
+        html{
+            font-size: 12px;
+        }
+        .container > div{
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+            margin: 10px auto;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 80vw;
+            margin:auto
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint veritatis voluptates vel voluptatum! Dolorem iure doloribus animi tenetur, in qui tempora repellat harum itaque cupiditate? Ea hic fugiat natus deserunt laborum saepe quia. Tenetur mollitia cupiditate, sed facere necessitatibus dolorum incidunt ullam ex dicta adipisci repellat minus quibusdam velit esse architecto. Numquam repellat eum totam?
+        </div>
+        <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error, tempora quisquam alias obcaecati illo est corrupti aspernatur necessitatibus dolorem sequi maiores possimus quis soluta incidunt enim eligendi inventore. Illum eveniet blanditiis sed, rerum laudantium temporibus beatae! Soluta maiores dolor impedit autem sapiente quam modi laudantium earum odio, molestiae, at sunt perferendis quod aliquam voluptatibus! Beatae, sunt! Repudiandae adipisci libero saepe necessitatibus mollitia tempore quae, laboriosam, architecto illo asperiores inventore, ipsam quaerat deleniti expedita. Non tempora expedita impedit eveniet facilis ut veritatis officiis, aut voluptates natus in qui excepturi. Unde harum ad, qui illum, reiciendis aut consectetur doloribus accusamus quidem, debitis expedita culpa modi alias beatae doloremque! Suscipit architecto magni, dignissimos atque velit, maxime ipsam illo eos porro ab quisquam, similique tempore et qui ullam harum veniam cumque unde. Fugit ipsam incidunt sed architecto asperiores autem veniam vel illo iste adipisci maiores pariatur, laboriosam cum dolorem laborum sint repellat blanditiis quod quibusdam ad earum libero. Mollitia, fugit velit accusantium quam nam earum aliquam id quos? Ducimus tempora quisquam beatae modi in eius cum! Distinctio minus explicabo possimus accusamus optio, quam vitae nam voluptatem ipsum dolor fuga quos quas? Soluta, dolorum necessitatibus voluptatum laborum atque eveniet dolores tenetur deleniti magnam pariatur cupiditate maxime perferendis, excepturi reprehenderit incidunt autem praesentium saepe perspiciatis. Enim quam recusandae, illum laudantium tempora consectetur ipsa ut perspiciatis eveniet voluptatem.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis rerum cupiditate debitis, ea eveniet eum culpa reiciendis repellendus dolorum eos ipsam adipisci quis amet cum voluptate blanditiis corporis aperiam atque.
+        </div>
+        
+        <div class="mycont">I'm a another container </div>
+</body>
+</html>
