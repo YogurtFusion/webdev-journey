@@ -1,0 +1,38 @@
+:root{
+    --primarytag: #1e1e1e;
+    --linkcolor: white;
+    --hovercolor:#898989;
+    --backgroundlinkcolor: wheat ;
+    --navbarbg: wheat;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    padding: 0;
+    background-color: var(--primarytag);
+}
+
+.navbar ul{
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: var(--navbarbg) ;
+}
+
+.navbar a{
+    color: var(--linkcolor);
+    background-color: var(--backgroundlinkcolor);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.navbar a:hover{
+    color: var(--hovercolor);   
+     background-color: #f5deb3aa; 
+}
