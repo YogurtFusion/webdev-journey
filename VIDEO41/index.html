@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>     
+        :root {
+            --heading-font: 'playfair Display', serif;
+            --para-font: 'poppins', sans-serif;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-family: var(--para-font);
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            margin: 1px;
+            
+        }
+        
+        .nav-logo{
+            padding-left: 9rem;
+            width: 40px;
+        }
+        .layer-1-1{
+            padding-left: 7rem;
+        }
+        .nav-ul{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            padding-right: 11rem;
+            padding-top: 1rem;
+        }
+        .hero{
+            text-align: center;
+            font-size: xx-large;
+            padding-top: 5rem;
+        }
+
+        .hero-head{
+            font-family: var(--heading-font);
+            /* font-weight: 100; */
+            font-style: normal;
+        }
+
+        .hero-para{
+
+            padding: 5rem 15rem 0rem 20rem;
+            font-size: x-large;
+
+        }
+        
+        .button{
+            display: flex;
+            justify-content: center;
+            margin: 2rem;
+        }
+        .button button {
+            font-family: var(--para-font);
+            border: none;
+            background-color: #00bcd4;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            padding: 12px 20px;
+        }
+        .button button:hover{
+            background-color: #0097a7;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo"><img src="Background-2.png" alt="UltraEdit logo" width="200px"></div>
+            <div class="layer-1-1"><img src="Layer-1-1.png" alt="Layer-1-1" width="100px"></div>
+            
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#">Products</a></li>
+                <li class="nav-li"><a href="#">For business</a></li>
+                <li class="nav-li"><a href="#">Resources</a></li>
+                <li class="nav-li"><a href="#">Academic licensing</a></li>
+                <li class="nav-li"><a href="#">Our company</a></li>
+                <li class="nav-li"><img width="24" height="24" src="https://img.icons8.com/material-rounded/24/language.png" alt="language"/><a href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-head">
+            <h1>Download UltraEdit for Windows</h1>
+        </div>
+        
+        <div class="hero-para">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
+        </div>
+        <div class="button"><button aria-label="Download Mac or linux version">Download Mac or linux version</button></div>
+    </section>
+</body>
+</html>
