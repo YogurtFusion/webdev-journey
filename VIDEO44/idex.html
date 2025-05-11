@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 6</title>
+    <style>
+        /* .logo{
+            
+        } */
+
+        .logo img{
+            width: 164px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: gray;
+        }
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span {
+            padding: 0 5px;
+        }
+
+
+        /* download section */
+
+        .download{
+            margin: 20rem;
+            padding: 2rem;
+            width: 50vw;
+            height: 60vh;
+            gap: 35px;
+
+        }
+        .container{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .items{
+            background-color: #f4f4f4;
+            color: #6e6e6e;
+            border-color: #d1d1d1;
+        
+        }
+        .button button{
+            border: none;
+            background-color: greenyellow;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .items h2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .items p {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .button a {
+            text-decoration: none;
+            color:  white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt="logo">
+            </div>
+                <div class="right">
+                    <ul>
+                        <li><span><a href="#">Products</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></li>
+                        <li><span><a href="#">Pricing</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></li>
+                        <li><span><a href="#">Resources</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></li>
+                        <li><span><a href="#">About Us</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></li>
+
+                    </ul>
+                </div>
+        </nav>
+    </header>
+
+    <section class="download">
+        <div class="container">
+            <div class="items">
+                <h2>
+                    English
+                </h2>
+                <p>English</p>
+                <div class="button">
+                    <button> <a href="ue_english_64.exe">DOWNLOAD 64-bit</a></button>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <h2>Deutsch</h2>
+                <p>German</p>
+                <div class="button">
+                    <button><a href="ue_german_64.exe">DOWNLOAD 64-bit</a></button>
+                </div>
+            </div>
+
+
+            <div class="items">
+                <h2>Italiano</h2>
+                <p>Italian</p>
+                <div class="button"><button><a href="ue_italian_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+            <div class="items">
+                <h2>Español</h2>
+                <p>Spanish</p>
+                <div class="button"><button><a href="ue_spanish_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+            <div class="items">
+                <h2>français</h2>
+                <p>French</p>
+                <div class="button"><button><a href="ue_french_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+            <div class="items">
+                <h2>português brasileiro</h2>
+                <p>Brazilian Portuguese</p>
+                <div class="button"><button><a href="ue_portuguese_64.exe">DOWNLOAD 64-bit</a></button></div>
+
+            </div>
+
+
+            <div class="items">
+                <h2>日本</h2>
+                <p>Japanese</p>
+                <div class="button"><button><a href="ue_japanese_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+            <div class="items">
+                <h2>한국어</h2>
+                <p>Korean</p>
+                <div class="button"><button><a href="ue_korean_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+
+            <div class="items">
+                <h2>华语</h2>
+                <p>Chinese</p>
+                <div class="button"><button><a href="ue_chinese_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+
+
+            <div class="items">
+                <h2>華語</h2>
+                <p>Traditional Chinese</p>
+                <div class="button"><button><a href="ue_chinese_traditional_64.exe">DOWNLOAD 64-bit</a></button></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
