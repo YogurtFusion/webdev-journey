@@ -20,25 +20,33 @@
 
 
 let Random1 = {
-ver1: "Crazy",
-ver2: "Amazing",
-ver3: "Fire",
-    
+    1: "Crazy",
+    2: "Amazing",
+    3: "Fire",
+
 }
 
 // shop name;
 let Random2 = {
-    
-    shop1: "Engine",
-    shop2: "Foods",
-     shop3: "Garments",
+
+    1: "Engine",
+    2: "Foods",
+    3: "Garments",
 }
 
 // Another Words;
+let Random3 = {
 
-let word1 = "Bros";
-let word2 = "Limited";
-let word3 = "Hub";
+    1: "Bros",
+    2: "Limited",
+    3: "Hub",
+}
 
+function names(obj) {
+    let RandomME = Math.floor(Math.random() * 3) + 1;
+    return obj[RandomME];
+}
 
+let bussinesname = `${names(Random1)} ${names(Random2)} ${names(Random3)}`;
 
+console.log("your genrated business name is : ", bussinesname)

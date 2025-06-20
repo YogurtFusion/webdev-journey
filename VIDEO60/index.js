@@ -32,6 +32,6 @@ console.log(b.length)// It is a syntax so we don't have to use ()
 console.log(b.slice(1, 5))
 console.log(b.slice(1))
 console.log(b.replace("li", "ol"))
-console.log(b.concat(c, "Anything you want"))
+console.log(b.concat(c, "Anything you want add "))
 
 console.log(b) // but still after all of that it print the actual  value or b bc  strings are immutable  

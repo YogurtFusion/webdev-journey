@@ -1,31 +1,16 @@
-/* faulty calculator
- 1. takes two no. as an input from user 
- 2. it perform wrong operation as follows: 
-  + ----> -
-  * ----> + 
-  - ----> /
-  / ----> **
-  */
+let fruit = "BananaSmothite"
+console.log(fruit .length)
+console.log(fruit[0])
+console.log(fruit[6])
+console.log(fruit[13])
 
-  let random = Math.random();
+console.log(fruit[0],fruit[6], fruit[13])
 
-  let a = prompt("enter your first no.");
-  let b = prompt("enter your second no.");
-  let c = prompt("enter your operation");
 
-let obj = {
-    "+": "-",
-    "*": "+",
-    "-": "/",
-    "/": "**"
-}
+let sentence = " i LovE javASCript"
 
-if ( random  > 0.1 ){
-    console.log(`the result is ${a} ${c} ${b}`)
-    alert(`the result is ${eval(`${a} ${c} ${b}`)}`)
-}
+console.log(sentence .trim())
 
-else {
-    c = obj[c]
-    alert(`the result is ${eval(`${a} ${c} ${b}`)}`)
-}
+console.log(sentence.toLocaleLowerCase())
+console.log(sentence .replace("javASCript", "JavaScript" ))
+
