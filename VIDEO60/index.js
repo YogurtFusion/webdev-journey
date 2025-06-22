@@ -10,7 +10,6 @@ console.log(a[6])
 
 console.log(a.length)
 
-let real_name = "MOcha"
 let friend = "loft"
 
 console.log("MY  fav cafe name is " + real_name + " and his fav cafe last name is " + friend )
@@ -34,4 +33,4 @@ console.log(b.slice(1))
 console.log(b.replace("li", "ol"))
 console.log(b.concat(c, "Anything you want add "))
 
-console.log(b) // but still after all of that it print the actual  value or b bc  strings are immutable  
+console.log(b) // but still after all of that it print the actual  value or b bc  strings are immutable  let real_name = "MOcha"
