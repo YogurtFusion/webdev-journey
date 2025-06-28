@@ -14,6 +14,7 @@ let obj = {
     b:2,
     c:3,
 }
+
 // for (const key in obj) {
 //     if (Object.prototype.hasOwnProperty.call(obj, key)) {
 //         const element = obj[key];
