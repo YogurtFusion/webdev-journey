@@ -1,7 +1,6 @@
 console.log("Hello log");
 
 console.log(document.body);
-
-document.body.firstElementChild
-document.body.firstChild.childNodes
-document.body.firstElementChild.children
+console.log(document.body.firstElementChild);
+console.log(document.body.firstChild.childNodes);
+console.log(document.body.firstElementChild.children);

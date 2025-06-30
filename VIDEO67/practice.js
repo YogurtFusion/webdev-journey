@@ -1,0 +1,1 @@
+document.getElementById("navbar").children[0].style.color= "red"
