@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM - DEEP</title>
     <style>
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        gap: 4rem;
+        margin: 40px 60px;
+      }
         .box{
             height: 45px;
             width: 56px;
@@ -15,6 +23,12 @@
     </style>
 </head>
 <body>
+  <nav id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="">login/sign up</a>
+    <a href="">contact us</a>
+  </nav>
     <div class="container">
         <div class="box">box1</div>
         <div class="box">box2</div>
@@ -33,7 +47,7 @@
         </tr>
       </table>
       
-    <script src="index.js">
-    </script>
+      <!-- <script src="index.js"></script> -->
+      <script src="practice.js"></script>
 </body>
 </html>
