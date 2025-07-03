@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Insert and Remove</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box"><p>Hey i'm a box <!-- this is a comment --></p></div>
+    <div class="container red bg-green voilet">
+        <div class="box" style="display: flex;" data-createdby="Me "><p>Hey i'm a box this is a comment</p></div>
         <div class="box box2">second box <!-- second comment --> 
             <div style="display: none;">display none div only show's in text content</div>
         </div>
