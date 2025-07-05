@@ -34,8 +34,39 @@ div.setAttribute("class", "created")
 document.querySelector(".container").before(div)
 
 // explore append
+let div2 = document.createElement("div")
+div2.append(" heyy first div 2")
+document.body.append(div2) 
+
+let p = document.createElement("p")
+p.textContent = "I'm a para"
+document.body.append(p)
 
 
+let Div = document.createElement("div")
+let span = document.createElement("span")
+span.textContent = " 🔥 hot stuff "
+
+div.append(" Text before ", span, " text after ")
+document.body.append(Div)
+
+
+let prepend = document.createElement("div")
+div.textContent = "peak shit"
+document.body.prepend(prepend)
+
+
+let nav = document.createElement("nav")
+nav.textContent = "replecating nav with .before"
+document.body.before(nav)
+
+let footer = document.createElement("footer")
+footer.textContent  = "just replicating the footer with the help of after"
+document.body.after(footer)
+
+// let replace = document.createElement("div")
+// replace.textContent= "replacing"
+// document.body.replaceWith(replace)
 
 let cont = document.querySelector(".container")
 cont.insertAdjacentHTML("beforebegin","  <b> I'm under the water please help me iouuuuu...</b> ")
