@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="insideContainer">
+            <div class="child">
+                I'm a child
+            </div>
+        </div>
+    </div>
+    <button id="btn1">button 1 </button>
+    <button id="btn2">button 2</button>
+
+    <h3>save your favorite links here</h3>
+    <input type="url" id="input" placeholder="enter your site link">
+    <button id="Sbtn" onclick="boom()"> save </button>
+    <h3>your saved links are here</h3>
+    <div id="savedlinks"></div>
+
+
+    <script>
+        let button1 = document.getElementById("btn1")
+        let button2 = document.getElementById("btn2")
+
+        button1.addEventListener("click", () => {
+            alert("first button is clicked")
+        })
+
+        button2.addEventListener("click", () => {
+            alert("second button is clicked")
+        })
+
+        // question 2 
+
+        // let p = prompt("input site link here")
+        // let ab = document.createElement("a")
+        // ab.textContent= p
+        // ab.href = p
+        // ab.target= "_blank"
+        // document.body.append(ab)
+
+        // function boom() {
+        //     event.preventDefault()
+
+        //     let input = document.getElementById("input")
+        //     let savebtn = document.getElementById("Sbtn")
+        //     let slinks = document.getElementById("savedlinks")
+
+        //     let links = document.createElement("a")
+        //     links.textContent = input.value
+        //     links.href = input.value;
+        //     links.target = "_blank"
+
+
+        //     slinks.append(links)
+        //     slinks.append(document.createElement("br"))
+
+        //     input.value = ""
+        // }
+        
+        
+        // ques 3 
+
+        let input = document.getElementById("input")
+        let savebtn = document.getElementById("Sbtn")
+        let slinks = document.getElementById("savedlinks")
+
+        savebtn.addEventListener("click", () =>{
+            let links = document.createElement("a")
+            links.textContent = input.value;
+            links.href = input.value;
+            links.target = "_blank";
+
+            slinks.appendChild(links)
+            slinks.appendChild(document.createElement("br"))
+        })
+    
+
+
+    </script>
+</body>
+
+</html>
