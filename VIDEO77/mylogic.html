@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my logic</title>
+</head>
+
+<body>
+    <script>
+
+        // let dayNo
+        // I made logic for days instead of months
+        // if (monthsOld < 30) {
+        //     dayNo = monthsOld + "days"
+        // }
+
+        // else if (monthsOld > 365) {
+        //     dayNo = (monthsOld / 365).toFixed(0) + "years"
+        // }
+        // else if (monthsOld == 365) {
+        //     dayNo = monthsOld + "Months"
+        // }
+        // else if (monthsOld == 30) {
+        //     dayNo = monthsOld + "days"
+        // }
+
+        // else if (monthsOld > 30) {
+        //     dayNo = (monthsOld / 30).toFixed(0) + "months"
+        // }
+
+        
+        //gpt logic
+        let dayNo
+        if (monthsOld < 1) {
+            dayNo = (monthsOld * 30).toFixed() + "days"
+
+        }
+        else if (monthsOld < 12) {
+            dayNo = monthsOld.toFixed(0) + " months"
+
+        }
+
+        else {
+            const years = monthsOld / 12;
+            dayNo = years.toFixed(1) + "years"
+        }
+    </script>
+</body>
+
+</html>

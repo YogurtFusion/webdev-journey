@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excercise 13</title>
+    <style>
+        .card {
+            display: flex;
+            max-width: 900px;
+            border: 1px solid black;
+            padding: 2px;
+            margin: 5px 0px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image .capsule {
+            position: absolute;
+            right: 0;
+            z-index: 10;
+            bottom: 0;
+            padding: 4px;
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .text h1 {
+            font-size: 30px;
+        }
+
+        .sidebyside {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 4px 8px;
+            width: 100px;
+            height: 50px;
+            border-radius: 12px;
+            margin: 0px 100px;
+            cursor: pointer;
+            background-color: black;
+            color: wheat;
+            text-align: center;
+            margin:  auto;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 100px;
+        }
+
+        .container2 input,
+        textarea {
+            margin: 10px 0px;
+            padding: 25px;
+        }
+
+        .container2 textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebyside">
+
+        <div class="container">
+            <div class="card">
+                <a href="https://www.youtube.com/watch?v=tVzUXW6siu0" target="_blank" rel="noopener noreferrer">
+
+                    <div class="image">
+                        <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+                        alt="">
+                        <div class="capsule">31:06</div>
+                    </div>
+                </a>
+                <div class=" text">
+                    <h1>Introduction to Backend | Sigma Web Dev video #83</h1>
+                    <p>CodeWithHarry . 727K views . 2 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <h2>create you card </h2>
+            <input type="url" id="vLink" placeholder="Video link">
+            <input type="url" id="thumbnail" placeholder="Enter thumbnail link">
+            <textarea name="title" id="title" placeholder="Enter you title here"></textarea>
+
+            <input type="text" id="cname" placeholder="Enter channel name">
+
+            <input type="text" id="views" placeholder="Enter views">
+            <input type="text" id="monthsOld" placeholder="How many months old">
+            <input type="text" id="duration" placeholder=" Video duration">
+
+            <button class="btn" id="btn" onclick="handleAddCard()">add card</button>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
