@@ -43,3 +43,7 @@ const myFunction =() =>  {
 
 // myFunction()
 setInterval(myFunction, 1000)
+
+// future plans 
+// 1.  adding timer 
+// 2. adding stopwatch 
