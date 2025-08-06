@@ -47,3 +47,7 @@ function deleteTodo(button) {
 
     li.remove()
 }
+
+// future plans 
+// 1. improve css (responsive, dlt btns)
+// 2. add check box
