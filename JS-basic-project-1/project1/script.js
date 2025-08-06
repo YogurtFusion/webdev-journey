@@ -30,3 +30,7 @@ while (true) {
         continue
     }
 }
+
+// future plans
+//  1. user can play games on web page in  input section 
+// 2. improve css 
