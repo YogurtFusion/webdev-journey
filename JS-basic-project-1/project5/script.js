@@ -34,3 +34,4 @@ console.log(messages);
 // future plans 
 // 1.  dot's can blink 3 times 
 // 2.  improved ui and css
+// 3. use local storage and aync function 
