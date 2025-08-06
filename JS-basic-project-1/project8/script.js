@@ -95,3 +95,8 @@ function setAlarm() {
 
 
 }
+
+// future plans 
+// 1.add stop alarm btn 
+// 2. show seeted alarm in web page 
+// 3. impove css of alarm input
