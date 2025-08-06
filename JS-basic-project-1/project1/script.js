@@ -32,5 +32,6 @@ while (true) {
 }
 
 // future plans
-//  1. user can play games on web page in  input section 
+//  1. user can play games on web page
 // 2. improve css 
+// 3. more interractive and responsive
