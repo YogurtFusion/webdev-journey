@@ -28,3 +28,10 @@ console.log(randomJokes);
 let jokesDiv = document.getElementsByClassName("div")[0]
 
 jokesDiv.innerHTML = randomJokes.split("\n").join("<br>")
+
+
+// future plans 
+// 1. Add more jokes 
+// 2. make page more interactive buy adding new joke btn
+// 3. improve css 
+// 4. use local storage to store jokes 
