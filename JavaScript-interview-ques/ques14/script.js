@@ -6,4 +6,4 @@ function smoothScrollToTop() {
         behavior: "smooth"
     })
 }
-
+document.getElementById("scroll").addEventListener("click", smoothScrollToTop)
