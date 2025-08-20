@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/JS-basic-project-1/project6/index.html"
+  "livePreview.defaultPreviewPath": "/JS-basic-project-1/project6/index.html",
+  "css.lint.unknownProperties": "ignore"
 }
