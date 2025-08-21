@@ -1,4 +1,5 @@
 npm init
+npm init -y (to skip the question)
 npm i slugify
 
 npm install express --save
