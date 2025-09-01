@@ -1,4 +1,6 @@
- // You have to write a Node.js program to clear clutter inside of a directory and organize the contents of that directory into different folders
+const fs = require("fs").promises
+const path  = require("path")
+// You have to write a Node.js program to clear clutter inside of a directory and organize the contents of that directory into different folders
 
 // for example, these files become:
 
@@ -15,3 +17,17 @@
 // png/name.png 
 // pdf/this.pdf pdf/harry.pdf
 // zip/harry.zip zip/Rohan.zip
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
