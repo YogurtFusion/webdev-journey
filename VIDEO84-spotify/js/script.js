@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`/VIDEO84-spotify/songs/${folder}/`)
+    let a = await fetch(`/songs/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -62,8 +62,8 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause = false) => {
-    // let audio = new Audio("/VIDEO84-spotify/songs/" + track)
-    currentSong.src = `/VIDEO84-spotify/songs/${currFolder}/` + track
+    // let audio = new Audio("/songs/" + track)
+    currentSong.src = `/songs/${currFolder}/` + track
     if (!pause) {
         currentSong.play()
         play.src = "assets/images/pause.svg"
@@ -75,7 +75,7 @@ const playMusic = (track, pause = false) => {
 // displaying albums
 async function displayAlbums() {
     console.log("displaying albums");
-    let a = await fetch(`/VIDEO84-spotify/songs/`)
+    let a = await fetch(`/songs/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -84,10 +84,10 @@ async function displayAlbums() {
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if (e.href.includes("/VIDEO84-spotify/songs/")&& !e.href.includes(".htaccess")){
+        if (e.href.includes("/songs/")&& !e.href.includes(".htaccess")){
             let folder = e.href.split("/").slice(-2)[0]
             // Get the metadata of the folder
-            let a = await fetch(`/VIDEO84-spotify/songs/${folder}/info.json`)
+            let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json()
             cardContainer.innerHTML = cardContainer.innerHTML + ` <div data-folder="${folder}" class="card">
             <div class="play">
@@ -98,7 +98,7 @@ async function displayAlbums() {
                 </svg>
             </div>
 
-            <img src="/VIDEO84-spotify/songs/${folder}/cover.jpg" alt="">
+            <img src="/songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
         </div>`
