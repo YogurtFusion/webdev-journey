@@ -1,7 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+/* navbar.css file  */
 nav, ul{
     display: flex;
 }
@@ -17,4 +14,11 @@ nav{
     background-color: beige;
     padding: 23px;
     color: #000;
+    justify-content: space-between;
+    padding: 6px 2rem;
+    align-items: center;
+}
+nav img{
+    width: 70px;
+    border-radius: 100%;
 }
