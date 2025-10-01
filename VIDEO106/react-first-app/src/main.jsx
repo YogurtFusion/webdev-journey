@@ -6,8 +6,5 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <div>
-      this the main content
-    </div>
   </StrictMode>,
 )
