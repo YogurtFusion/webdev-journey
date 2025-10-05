@@ -44,7 +44,7 @@ function App() {
 
       {todos.map(todo => {
         // return <Todo key={todo.tittle } todo ={todo} />
-        return <div key={todo.tittle} className="m-4 border border-purple-1">
+        return <div key={todo.tittle} className="m-4 border border-purple-100 p-4 rounded-full">
           <div className="todo">{todo.tittle} </div>
           <div className="todo">{todo.desc} </div>
         </div>
