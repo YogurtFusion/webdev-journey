@@ -41,7 +41,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-
       {todos.map(todo => {
         // return <Todo key={todo.tittle } todo ={todo} />
         return <div key={todo.tittle} className="m-4 border border-purple-100 p-4 rounded-full">
