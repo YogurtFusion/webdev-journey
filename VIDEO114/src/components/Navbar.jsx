@@ -4,7 +4,7 @@ import { FaCoffee } from 'react-icons/fa'
 function Navbar() {
   return (
     <div>
-         <nav className='bg-[#CAF0F8] flex justify-between max-w-[100vw] px-10  py-5 rounded-xl '>
+         <nav className='bg-[#CAF0F8] flex justify-around max-w-[100vw] px-10  py-5 rounded-xl '>
 
             <div className="logo font-medium tracking-wide 
             bg-gradient-to-r from-[#03045E] to-[#00B4D8] text-transparent bg-clip-text flex justify-center items-center gap-3  max-w-[100%]">

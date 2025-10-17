@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* body{
 background: #ade8f4;
 color: #FDFBD4;
-}
-
-/* .logo{
-  
 } */
+
+body{
+    --tw-bg-opacity:1;
+    background-color: #ade8f4;
+    color: #FDFBD4;
+}
