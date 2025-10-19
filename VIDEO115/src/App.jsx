@@ -40,3 +40,6 @@ function App() {
 }
 
 export default App
+
+
+// ask use if they realy wanna add or delete their tasks
