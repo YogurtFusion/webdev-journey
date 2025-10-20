@@ -62,8 +62,8 @@ function App() {
       fruits.map((fruits,index) => (
         
         <>
-        <li key={index}> {fruits} 
-          <button onClick={()=> delteFruit(index)}>Delete</button>
+        <li className='flex gap-3 text-xl text-gray-700' key={index}> {fruits} 
+          <button className='text-xs font-bold text-black border-2 border-dotted py-2 px-3 rounded-full' onClick={()=> delteFruit(index)}>Delete</button>
         </li>
         </>
       ))
@@ -73,7 +73,7 @@ function App() {
 
         <input type="text" placeholder='Enter your fruit name' value={addFruit} onChange={(e) => setAddFruit(e.target.value)} />
 
-        <button onClick={newFruit} >Add fruit</button>
+        <button className='text-xs font-bold text-black border-2 border-dotted py-2 px-3 rounded-full' onClick={newFruit} >Add fruit</button>
     
     </div>
    </ul>
