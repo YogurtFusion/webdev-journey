@@ -3,8 +3,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [name, setName] = useState("Yogurt")
-  const [tName, setTname] = useState("current title name ")
+  const [name, setName] = useState("Enter Name")
+  const [tName, setTname] = useState("Enter title  ")
 
   useEffect(()=>{
     console.log("name changed to: ", name)
@@ -29,14 +29,14 @@ function App() {
     </div>
 
 {/* use Effect */}
-   <div className='my-5 mx-auto w-1/2'>
+   <div className='my-3 mx-auto w-1/2 bg-[#EEE8AA] px-8 py-10   text-center'>
 
    <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
-   <p>Hello, {name} </p>
+   <p>Hello: {name} </p>
 
 <div>
   <input type="text" value={tName} onChange={(e)=> setTname(e.target.value)} />
-  <p>Title namem, {tName} </p>
+  <p>Title namem: {tName} </p>
 </div>
 
    </div>
