@@ -5,6 +5,16 @@ function App() {
   const [count, setCount] = useState(0)
   const [name, setName] = useState("Enter Name")
   const [tName, setTname] = useState("Enter title  ")
+  const [fruits, setFruit] = useState(["Apple ", "Banana ", "Cheery" ])
+  const [addFruit, setAddFruit] = useState("")
+
+
+  function newFruit() {
+    if(addFruit.trim()!==""){
+      setFruit([...fruits, addFruit]);
+      setAddFruit("")
+    }
+  }
 
   useEffect(()=>{
     console.log("name changed to: ", name)
@@ -40,6 +50,27 @@ function App() {
 </div>
 
    </div>
+
+   {/* .map  */}
+
+   <ul>
+    {
+      fruits.map((fruits,index) => (
+        
+        <>
+        <li key={index}> {fruits} </li>
+        </>
+      ))
+    }
+
+    <div>
+
+        <input type="text" placeholder='Enter your fruit name' value={addFruit} onChange={(e) => setAddFruit(e.target.value)} />
+
+        <button onClick={newFruit} >Add fruit</button>
+    
+    </div>
+   </ul>
    
     </>
   )
