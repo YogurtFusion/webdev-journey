@@ -16,6 +16,10 @@ function App() {
     }
   }
 
+  function delteFruit(indexToDelete){
+    setFruit(fruits.filter((_, index) => index !== indexToDelete))
+  }
+
   useEffect(()=>{
     console.log("name changed to: ", name)
   }, [name])
@@ -53,17 +57,19 @@ function App() {
 
    {/* .map  */}
 
-   <ul>
+   <ul className='flex flex-col items-center justify-center gap-8 bg-amber-50 py-4 px-2'>
     {
       fruits.map((fruits,index) => (
         
         <>
-        <li key={index}> {fruits} </li>
+        <li key={index}> {fruits} 
+          <button onClick={()=> delteFruit(index)}>Delete</button>
+        </li>
         </>
       ))
     }
 
-    <div>
+    <div className='flex justify-center items-center'>
 
         <input type="text" placeholder='Enter your fruit name' value={addFruit} onChange={(e) => setAddFruit(e.target.value)} />
 
