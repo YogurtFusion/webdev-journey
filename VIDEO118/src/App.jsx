@@ -6,19 +6,41 @@ import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [count2, setCount2] = useState(0)
   const [adjective, setAdjective] = useState("good")
 
+  const getAdjective2 = useCallback( 
+  () =>{
+    return "another2: "+ count2
+  }, 
+  [count2],
+  )
+  // const getAdjective = 
+  //   () => {
+  //     return "another"+count
+  //   }
+
+  
+
+  // const getAdjective = useCallback(
+  //   () => {
+  //     return "another"+count
+  //   },
+  //   [],
+  // )
+  
   const getAdjective = useCallback(
     () => {
-      return "another"
+      return "another"+count
     },
-    [],
+    [count],// dependencies array 
   )
+
   
 
   return (
     <>
-    <Navbar adjective={"good"} getAdjective={getAdjective} /> 
+    <Navbar adjective={"good"} getAdjective={getAdjective} getAdjective2 = {getAdjective2} /> 
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -31,6 +53,10 @@ function App() {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
+        </button>
+        
+        <button onClick={() => setCount2((count2) => count2 + 1)}>
+          count is {count2}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
