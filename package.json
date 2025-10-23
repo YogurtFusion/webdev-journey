@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "express": "^5.1.0",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "vite": "^7.1.9"
   },
   "name": "sigma-webdev-journey",
   "version": "1.0.0",
