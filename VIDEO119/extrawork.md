@@ -1,0 +1,1 @@
+Add or connect submit button to enter button 
