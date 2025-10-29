@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import fs from "fs/promises"
 import { collectSegmentData } from "next/dist/server/app-render/collect-segment-data";
+import Navbar from "@/components/Navbar";
 
 export default async function Home() {
   // const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ console.log("file content: \n", a)
     <div className="flex" >
       {/* I'm a component{count}
       <button onClick={()=>{setCount(count+1)}} >Click me </button> */}
+    <Navbar/>
     </div>
   );
 }
