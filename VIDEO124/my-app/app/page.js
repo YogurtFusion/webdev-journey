@@ -5,10 +5,16 @@ import styles from "./page.module.css";
 export default function Home() {
   
   const handleClick = async  () => {
-    let data = {
+    let data = [
+      {
       name: "Harry",
       role: "Coder"
-    }
+    },
+      {name: "test", 
+      role: "test2",}
+    ]
+    
+
     let a = await fetch("/api/add", {
       method: "POST", headers: {
         "Content-Type": "application/json",
