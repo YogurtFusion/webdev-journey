@@ -33,4 +33,4 @@ export { handler as GET, handler as POST }
 // })
 
 
-// export { handler as Get, handler as POST }
+// export { handler as Get, handler as POST } // HERE  I did Get instead of GET small e and t 
