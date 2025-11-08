@@ -39,4 +39,4 @@ export default function RootLayout({ children }) {
 //       </SessionWrapper>
 //     </html>
 //   )
-// }
+// } // here i wrapped body to but i only have to wrap children 
