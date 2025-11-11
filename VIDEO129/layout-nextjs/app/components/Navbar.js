@@ -7,7 +7,7 @@ function Navbar() {
             <div className="logo rounded ">
                 <img  className='rounded-full max-w-[100px]' src="https://picsum.photos/1000" alt="dawf" />
             </div>
-            <ul className='flex '>
+            <ul className='flex gap-1'>
                 <li>Home</li>
                 <li>About</li>
                 <li>Contact</li>
