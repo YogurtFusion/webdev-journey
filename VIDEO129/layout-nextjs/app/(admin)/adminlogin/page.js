@@ -1,5 +1,9 @@
 import React from 'react'
-
+export const metadata = {
+  title: "it's works ",
+  description: '...',
+}
+ 
 function page() {
   return (
     <div>
@@ -9,10 +13,6 @@ function page() {
 }
 
 
-export const metadata = {
-  title: "it's works ",
-  description: '...',
-}
- 
+
 
 export default page
