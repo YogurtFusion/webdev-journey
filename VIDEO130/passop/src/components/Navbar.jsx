@@ -7,7 +7,7 @@ function Navbar() {
 
                 <div className='logo font-bold text-white text-2xl'>
                     <span className='text-green-700'>&lt;</span>
-                    <span> <a href="/">Passop</a> </span>
+                    <span> <a href="/">Passop</a></span>
                     <span className='text-green-700'>OP/&gt;</span>
                 </div>
                 <ul className='flex gap-4' >
