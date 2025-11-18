@@ -10,16 +10,26 @@ function Manager() {
                     <span className='text-green-700' >&lt;</span>
                     <span>Pass</span>
                     <span className='text-green-700' >OP/&gt;</span>
-                    
-                    </h1>
+
+                </h1>
                 <p className='text-green-900 text-lg text-center'>Your own Passwork Manager</p>
 
-                <div className='flex flex-col p-4 text-black' >
+                <div className='flex flex-col items-center p-4 text-black gap-8 ' >
                     <input className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" />
-                    <div className='flex' >
-                        <input type="text" />
-                        <input type="text" />
+
+                    <div className='flex w-full  justify-between gap-8' >
+                        <input className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" />
+
+                        <input className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" />
                     </div>
+
+                    <button className='flex justify-center items-center bg-green-400 hover:bg-green-300 rounded-full px-2 py-2 w-fit' >
+                        <lord-icon
+                            src="https://cdn.lordicon.com/efxgwrkc.json"
+                            trigger="hover">
+                        </lord-icon>
+                        Add Password
+                    </button>
                 </div>
             </div>
         </div>
