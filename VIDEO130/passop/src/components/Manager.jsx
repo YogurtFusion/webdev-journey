@@ -1,19 +1,16 @@
-import Cognito from 'next-auth/providers/cognito'
 import React, { useEffect, useRef, useState } from 'react'
+
 
 
 function Manager() {
     const ref = useRef()
-    const [form, setForm] = useState({ site: "", username: "", pasword: "" })
+    const [form, setForm] = useState({ site: "", username: "", password: "" })
     const [passwordArray, setpasswordArray] = useState([])
 
     useEffect(() => {
         let passwords = localStorage.getItem("passwords")
         if (passwords) {
-            setpasswordArray = JSON.parse(passwords)
-        }
-        else {
-            passwords = []
+            setpasswordArray(JSON.parse(passwords))
         }
     }, [])
 
@@ -25,18 +22,20 @@ function Manager() {
         else {
             ref.current.src = "icons/eyecross.png"
         }
-
-        const savePassword = () => {
-            Console.log(form)
-            setpasswordArray([...passwordArray, form])
-        }
-
-        const handleChange = (e) => {
-            setForm({ ...form, [e.target.name]: e.target.value })
-        }
-
-
     }
+
+    const savePassword = () => {
+        setpasswordArray([...passwordArray, form])
+        localStorage.setItem("passwords", JSON.stringify([...passwordArray, form]))
+        console.log([...passwordArray, form])
+    }
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value })
+    }
+
+
+
 
 
     return (
@@ -56,13 +55,13 @@ function Manager() {
                     <input value={form.site} onChange={handleChange} placeholder='Enter website URL' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='site' />
 
                     <div className='flex w-full  justify-between gap-8' >
-                        <input value={form.username} onChange={handleChange} placeholder='Enter username' className=' rounded-full border border-green-500 w-full p-4 py-1' type="url" name='username' />
+                        <input value={form.username} onChange={handleChange} placeholder='Enter username' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='username' />
 
                         <div className="relative">
 
-                            <input value={form.pasword} onChange={handleChange} placeholder='Enter Password' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='password' />
+                            <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='password' />
                             <span className="absolute right-[3px] top-[4px] cursor-pointer ">
-                                <img ref={ref} className='p-1' width={26} src="icons/eye.png " alt="eye" onClick={showPassword} />
+                                <img ref={ref} className='p-1' width={26} src="icons/eye.png" alt="eye" onClick={showPassword} />
                             </span>
                         </div>
                     </div>
@@ -74,6 +73,43 @@ function Manager() {
                         </lord-icon>
                         Add Password
                     </button>
+                </div>
+                <div className="passwords">
+                    <h2 className='font-bold text-2xl py-4' >Your Passwords</h2>
+                    {passwordArray.length === 0 && <div>No passwords to show </div>}
+                    {passwordArray.length !=0 && <table className='table-auto w-full rounded-md overflow-hidden'>
+                        <thead className='bg-green-800 text-white' >
+                            <tr>
+                                <th className='py-2' >song</th>
+                                <th className='py-2' >Artist</th>
+                                <th className='py-2' >year</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody className='bg-green-100' >
+                            <tr>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+
+                            </tr>
+                            <tr>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+
+                            </tr>
+                            <tr>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+                                <td className='py-2 border border-white text-center w-32' > the sliding mr bonds (next stop, potteryville) </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    }
                 </div>
             </div>
         </div>
