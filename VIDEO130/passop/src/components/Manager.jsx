@@ -52,14 +52,14 @@ function Manager() {
                 <p className='text-green-900 text-lg text-center'>Your own Passwork Manager</p>
 
                 <div className='flex flex-col items-center p-4 text-black gap-8 ' >
-                    <input value={form.site} onChange={handleChange} placeholder='Enter website URL' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='site' />
+                    <input value={form.site} onChange={handleChange} placeholder='Enter website URL' className=' rounded-full border border-green-500 w-full p-4 py-1' type="url" name='site' />
 
                     <div className='flex w-full  justify-between gap-8' >
                         <input value={form.username} onChange={handleChange} placeholder='Enter username' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='username' />
 
                         <div className="relative">
 
-                            <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' rounded-full border border-green-500 w-full p-4 py-1' type="text" name='password' />
+                            <input value={form.password} onChange={handleChange} placeholder='Enter Password' className=' rounded-full border border-green-500 w-full p-4 py-1' type="password" name='password' />
                             <span className="absolute right-[3px] top-[4px] cursor-pointer ">
                                 <img ref={ref} className='p-1' width={26} src="icons/eye.png" alt="eye" onClick={showPassword} />
                             </span>
