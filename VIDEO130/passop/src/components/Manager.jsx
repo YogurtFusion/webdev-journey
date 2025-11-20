@@ -113,6 +113,7 @@ function Manager() {
                                 <th className='py-2' >Site</th>
                                 <th className='py-2' >User name</th>
                                 <th className='py-2' >Password</th>
+                                <th className='py-2' >Actions</th>
                             </tr>
 
                         </thead>
