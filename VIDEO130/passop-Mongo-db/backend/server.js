@@ -6,11 +6,11 @@ const cors = require("cors")
 
 dotenv.config()
 
-const url = "process.env.MONGO_URI";
+const url = process.env.MONGO_URI;
 const client = new MongoClient(url)
 client.connect()
 
-const dbName = "passop.env.DB_NAME"
+const dbName = process.env.DB_NAME
 const app = express()
 const port = 3000
 app.use(bodyparser.json())
@@ -25,7 +25,7 @@ app.use(cors())
 app.get('/', async (req, res) => {
   const db = client.db(dbName);
   const collection = db.collection("passwords")
-  const findResult = await collection.fing({}).toArray();
+  const findResult = await collection.find({}).toArray();
   res.json(findResult)
 })
 
