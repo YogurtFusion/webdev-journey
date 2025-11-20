@@ -32,24 +32,41 @@ function Manager() {
     }
 
     const savePassword = () => {
-        setpasswordArray([...passwordArray,{...form, id: uuidv4()}])
-        localStorage.setItem("passwords", JSON.stringify([...passwordArray, {...form, id: uuidv4()}]))
+        setpasswordArray([...passwordArray, { ...form, id: uuidv4() }])
+        setForm({ site: "", username: "", password: "" })
+        localStorage.setItem("passwords", JSON.stringify([...passwordArray, { ...form, id: uuidv4() }]))
         console.log([...passwordArray, form])
     }
 
-    const deletePassword  = (id) =>{
+    const deletePassword = (id) => {
         console.log("Deleting the  password with id ", id)
-        setpasswordArray(passwordArray.filter(item=>item.id!==id))
-        localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item=>item.id!==id)))
+
+        const passwordToDelete = passwordArray.find(item => item.id === id)
+
+        let c = confirm(`Do you really wanna delete this password ? \n\nSite: ${passwordToDelete.site}\nUsername: ${passwordToDelete.username} `, )
+
+        if (c) {
+
+            setpasswordArray(passwordArray.filter(item => item.id !== id))
+            localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item => item.id !== id)))
+            toast.success("🗑️ Password deleted sucessfully", {
+                position: "top-center",
+                autoClose: 3000,
+                theme: "light",
+                transition: Bounce,
+            })
+        }
 
     }
 
-    const editPassword = (id) =>{
-        console.log("Editing the password with id" , id)
+    const editPassword = (id) => {
+        console.log("Editing the password with id", id)
+        setForm(passwordArray.filter(i => i.id === id)[0])
+        setpasswordArray(passwordArray.filter(item => item.id !== id))
     }
 
     const copyText = (text) => {
-        toast('🦄 PASSWORD Copied ' + text , {
+        toast('🦄 PASSWORD Copied ' + text, {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -63,7 +80,7 @@ function Manager() {
         navigator.clipboard.writeText(text)
     }
 
-    
+
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
@@ -169,7 +186,7 @@ function Manager() {
                                             </div>
                                         </div>
                                     </td>
-                         
+
                                     <td className='  py-2 border border-white text-center' >
                                         <div className='flex items-center justify-center ' >
                                             <span> {item.password}</span>
@@ -184,20 +201,20 @@ function Manager() {
                                             </div>
                                         </div>
                                     </td>
-                         
+
                                     <td className=' py-2 border border-white text-center'>
-                                        <span className='cursor-pointer mx-1' onClick={()=>{editPassword(item.id)}}>
+                                        <span className='cursor-pointer mx-1' onClick={() => { editPassword(item.id) }}>
                                             <lord-icon
                                                 src="https://cdn.lordicon.com/gwlusjdu.json"
                                                 trigger="hover"
-                                                style={{"width":"25px", "height":"25px"}}>
+                                                style={{ "width": "25px", "height": "25px" }}>
                                             </lord-icon>
                                         </span>
-                                        <span className='cursor-pointer mx-1'onClick={()=>{deletePassword(item.id)}}>
+                                        <span className='cursor-pointer mx-1' onClick={() => { deletePassword(item.id) }}>
                                             <lord-icon
                                                 src="https://cdn.lordicon.com/skkahier.json"
                                                 trigger="hover"
-                                                style={{"width":"25px", "height":"25px"}}>
+                                                style={{ "width": "25px", "height": "25px" }}>
                                             </lord-icon>
                                         </span>
                                     </td>
