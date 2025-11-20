@@ -11,11 +11,13 @@ function Manager() {
     const [form, setForm] = useState({ site: "", username: "", password: "" })
     const [passwordArray, setpasswordArray] = useState([])
 
+    const getPasswords = async ()=>{
+        let req = await fetch("https://localhost:3000/")
+        let passwords = await req.jsong()
+        console.log(passwords)
+    }
     useEffect(() => {
-        let passwords = localStorage.getItem("passwords")
-        if (passwords) {
-            setpasswordArray(JSON.parse(passwords))
-        }
+      getPasswords()
     }, [])
 
     const showPassword = () => {
