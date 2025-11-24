@@ -2,3 +2,4 @@
 2. use page title through export tag in every component 
 3. rename page to contact: export it as an contact to a page.js of a contact page 
 4. script tag: injecting js to a specific page 
+5. Image tag instead of img with fill etc 
