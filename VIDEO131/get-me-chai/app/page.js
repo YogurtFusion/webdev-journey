@@ -34,9 +34,9 @@ export default function Home() {
       <div className="bg-white h-1 opacity-10"> </div>
 
       <div className="text-white container mx-auto py-32">
-        <h1 className="text-2xl font-bold text-center mb-14 ">
+        <h2 className="text-2xl font-bold text-center mb-14 ">
           Your Fans Can buy you a chai
-        </h1>
+        </h2>
         <div className="flex gap-5 justify-around">
           <div className="item space-y-3 flex flex-col items-center justify-center">
             <img
