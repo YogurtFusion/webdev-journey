@@ -27,7 +27,7 @@ function Username({ params }) {
         <div className="text-slate-400" >9718member . 82post . 15,450/release</div>
       </div>
 
-      <div className="payment flex gap-3 w-[80%] mt-11 ">
+      <div className="payment flex gap-3 w-[80%] mt-11  mx-auto ">
         <div className="suppoters w-1/2 bg-slate-900 rounded-lg text-white p-10">
         <h2 className="text-2xl font-bold my-5 " >Suppoters</h2>
         <ul className="mx-5 text-lg">

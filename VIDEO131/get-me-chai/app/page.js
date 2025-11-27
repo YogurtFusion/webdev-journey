@@ -7,7 +7,7 @@ export default function Home() {
         <div className="font-bold text-5xl flex justify-center items-center gap-2">
           Buy Me a Chai
           <span>
-            <img src="/tea.gif" width={88} alt="" />
+            <img  className="invert-img" src="/tea.gif" width={88} alt="" />
           </span>
         </div>
         <p>

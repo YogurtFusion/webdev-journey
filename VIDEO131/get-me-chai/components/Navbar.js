@@ -23,7 +23,7 @@ function Navbar() {
         className="logo font-bold text-lg flex justify-center items-center"
       >
         {" "}
-        <img src="/tea.gif" width={44} alt="" /> <span> GetMeChai</span>
+        <img className=""invert-img src="/tea.gif" width={44} alt="" /> <span> GetMeChai</span>
       </Link>
       {/* 
             <ul className='flex justify-between gap-4' >

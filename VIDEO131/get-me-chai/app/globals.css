@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.invert-img{
+    filter: invert(0.23);
+}
