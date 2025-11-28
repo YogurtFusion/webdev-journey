@@ -3,14 +3,13 @@ import Email from "next-auth/providers/email";
 const {Schema, model} = mongoose;
 
 const UserSchema = new Schema ({
-    email: {type: string, require: true},
-    name: {type: string, },
-    username: {type: string, require: true},
-    profilepic: {type: string},
-    coverpic: {type: string},
+    email: {type: String, require: true},
+    name: {type: String, },
+    username: {type: String, require: true},
+    profilepic: {type: String},
+    coverpic: {type: String},
     createdAt: {type: Date, default: Date.now},
     updatedAt: {type: Date, default: Date.now},
 })
 
-const User = model("User", UserSchema);
-export default mongoose.models.User || User
+export default mongoose.models.User || model("User", UserSchema);

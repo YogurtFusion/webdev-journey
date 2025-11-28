@@ -1,16 +1,15 @@
 import mongoose from "mongoose";
-const { Schema, model } = mongoose;
+const { Schema, model} = mongoose;
 
 const PaymentSchema = new Schema({
-  name: { type: string, required: true },
-  to_user: { type: string, required: true },
-  oid: { type: string, required: true },
-  message: { type: string },
-  amount: { type: Number, require: true },
+  name: { type: String, required: true },
+  to_user: { type: String, required: true },
+  oid: { type: String, required: true },
+  message: { type: String },
+  amount: { type: Number, required: true },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
   done: { type: Boolean, default: false },
 });
 
-const Payment = model("payment", PaymentSchema);
-export default mongoose.models.Payment || Payment;
+export default mongoose.models.Payment || model("Payment", PaymentSchema);
