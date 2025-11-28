@@ -21,6 +21,7 @@ export const authOptions = {
     async signIn({ user, account, profile, email, credentials }) {
       if (account.provider == "github") {
         const client = await mongoose.connect();
+        // 2:01:00
       }
     },
   },
