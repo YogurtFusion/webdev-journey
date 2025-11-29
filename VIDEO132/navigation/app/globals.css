@@ -3,6 +3,15 @@
   --foreground: #171717;
 }
 
+.chal_chiaya_chaiya{
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
