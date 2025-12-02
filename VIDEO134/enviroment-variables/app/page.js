@@ -9,6 +9,7 @@ export default function Home() {
   <div className="">
     {/* hey this is a home page and here is ID: {process.env.ID} */}
     {/* <p>and the secret is: {process.env.SECRET} </p> */}
+    <h1>this is from local ENV {process.env.CARD} </h1>
     <h2>the public id is {process.env.NEXT_PUBLIC_ID} </h2>
     <h1>and the test is {process.env.NEXT_PUBLIC_TEST} </h1>
   </div>
