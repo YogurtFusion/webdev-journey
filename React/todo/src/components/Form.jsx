@@ -6,22 +6,20 @@ const Form = () => {
     e.target.reset();
   };
   return (
-    <div>
-      <form className="from" onSubmit={handleSubmit}>
-        <label htmlFor="todo">
-          <input
-            type="text"
-            name="todo"
-            id="todo"
-            placeholder="write your next task here "
-          />
-        </label>
-        <button>
-          <span>Submit</span>
-          <img src="/plus.gif" alt="" />
-        </button>
-      </form>
-    </div>
+    <form className="from" onSubmit={handleSubmit}>
+      <label htmlFor="todo">
+        <input
+          type="text"
+          name="todo"
+          id="todo"
+          placeholder="write your next task here "
+        />
+      </label>
+      <button>
+        <span>Submit</span>
+        <img src="/plus.gif" alt="" />
+      </button>
+    </form>
   );
 };
 
