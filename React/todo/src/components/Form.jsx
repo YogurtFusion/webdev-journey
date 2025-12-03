@@ -17,7 +17,7 @@ const Form = () => {
       </label>
       <button>
         <span>Submit</span>
-        <img src="/plus.gif" alt="" />
+        <span className="material-symbols-outlined">add</span>
       </button>
     </form>
   );

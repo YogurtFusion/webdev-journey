@@ -1,6 +1,6 @@
 import React from "react";
 
-const TODOList = ({todos}) => {
+const TODOList = ({ todos }) => {
   function Item({ item }) {
     return (
       <li id={item?.id} className="todo_item">
@@ -14,12 +14,12 @@ const TODOList = ({todos}) => {
         <div className="todo_items_right">
           <button>
             <span className="visually-hidden">Edit</span>
-            <img src="/edit.gif" alt="" />
+            <span class="material-symbols-outlined">edit</span>
           </button>
 
           <button>
             <span className="visually-hidden">Delete</span>
-            <img src="/bin.gif" alt="" />
+            <span class="material-symbols-outlined">delete_forever</span>
           </button>
         </div>
       </li>
