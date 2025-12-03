@@ -14,12 +14,12 @@ const TODOList = ({ todos }) => {
         <div className="todo_items_right">
           <button>
             <span className="visually-hidden">Edit</span>
-            <span class="material-symbols-outlined">edit</span>
+            <span className="material-symbols-outlined">edit</span>
           </button>
 
           <button>
             <span className="visually-hidden">Delete</span>
-            <span class="material-symbols-outlined">delete_forever</span>
+            <span className="material-symbols-outlined">delete_forever</span>
           </button>
         </div>
       </li>
@@ -31,7 +31,7 @@ const TODOList = ({ todos }) => {
       {todos && todos.length > 0 ? (
         todos?.map((item, index) => <Item key={index} item={item} />)
       ) : (
-        <p>seems lonley in here , what are you up do ? </p>
+        <li>heyy</li>
       )}
     </ol>
   );

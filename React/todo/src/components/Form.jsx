@@ -6,7 +6,8 @@ const Form = () => {
     e.target.reset();
   };
   return (
-    <form className="from" onSubmit={handleSubmit}>
+    
+    <form className="form" onSubmit={handleSubmit}  >
       <label htmlFor="todo">
         <input
           type="text"
@@ -18,8 +19,10 @@ const Form = () => {
       <button>
         <span>Submit</span>
         <span className="material-symbols-outlined">add</span>
+   
       </button>
     </form>
+    
   );
 };
 
