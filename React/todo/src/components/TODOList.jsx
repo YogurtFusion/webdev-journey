@@ -5,10 +5,10 @@ const TODOList = ({ todos }) => {
     return (
       <li id={item?.id} className="todo_item">
         <button>
-          <svg>
+          {/* <svg>
             <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
-          </svg>
-          <p>{item?.title} </p>
+          </svg> */}
+          <p className="item-title" >{item?.title} </p>
         </button>
 
         <div className="todo_items_right">
@@ -31,7 +31,7 @@ const TODOList = ({ todos }) => {
       {todos && todos.length > 0 ? (
         todos?.map((item, index) => <Item key={index} item={item} />)
       ) : (
-        <li>heyy</li>
+        <p>so lonley here. what do you think ? </p>
       )}
     </ol>
   );

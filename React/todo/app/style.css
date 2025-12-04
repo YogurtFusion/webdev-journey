@@ -167,3 +167,10 @@ header {
 .todo_items_right button svg {
   fill: #c2b39a;
 }
+
+.item-title{
+  background: black;
+  color: antiquewhite;
+  padding: 0.5rem 1rem;
+}
+

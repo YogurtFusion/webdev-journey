@@ -1,8 +1,13 @@
 import React from "react";
 
-const Form = () => {
+const Form = ({setTodos}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
+    const value = e.target.todo.value;
+    setTodos((prevTodos)=>[
+      ...prevTodos,
+      {title: value, id: crypto.randomUUID(), is_completed: false}
+    ])
     e.target.reset();
   };
   return (
@@ -17,7 +22,7 @@ const Form = () => {
         />
       </label>
       <button>
-        <span>Submit</span>
+        {/* <span>Submit</span> */}
         <span className="material-symbols-outlined">add</span>
    
       </button>
