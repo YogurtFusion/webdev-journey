@@ -1,11 +1,18 @@
 import React from "react";
 
 const TODOList = ({ todos, setTodos }) => {
-  function Item({ item }) {
-    const completeTodo = () => {};
+  function Item({ item, setTodos }) {
+    const completeTodo = () => {
+      setTodos((prevTodos) =>
+        prevTodos.map((todos)=>
+        todos.id === item.id
+    ?{...todos, is_completed: !todos.is_completed}
+  :todos)
+      )
+    };
     return (
       <li id={item?.id} className="todo_item">
-        <button>
+        <button onClick={completeTodo} >
           {/* <svg>
             <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
           </svg> */}
@@ -30,7 +37,7 @@ const TODOList = ({ todos, setTodos }) => {
   return (
     <ol className="todo_list">
       {todos && todos.length > 0 ? (
-        todos?.map((item, index) => <Item key={item.id} item={item} />)
+        todos?.map((item, index) => <Item key={item.id} item={item} setTodos={setTodos} />)
       ) : (
         <p>so lonley here. what do you think ? </p>
       )}
