@@ -17,8 +17,12 @@ const TODOList = ({ todos, setTodos }) => {
           {/* <svg>
             <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
           </svg> */}
-          <svg fill={item.is_completed ? "#22C55E" : "#0d0d0d"}>
-            <circle cx="11.998" cy="11.998"  r="9.998" />
+          <svg
+            fill={item.is_completed ? "#22C55E" : "#0d0d0d"}
+            width={24}
+            height={24}
+          >
+            <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
           </svg>
           <p className="item-title">{item?.title} </p>
         </button>

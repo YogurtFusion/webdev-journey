@@ -124,10 +124,9 @@ header {
   margin-bottom: 27px;
   gap: 27px;
 }
-.todo_item,
-.edit-form input {
+.todo_item {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   width: 100%;
@@ -138,22 +137,44 @@ header {
   color: #fff;
   padding: 12px;
   position: relative;
- 
-
 }
-.todo_item svg {
-  background-color: transparent;
-   /* height:0; */
+
+/* edit-form input should NOT be flex */
+.edit-form input {
+  width: 100%;
+  max-width: 455px;
+  height: 70px;
+  border: 1px solid #c2b39a;
+  font-size: 16px;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 12px;
+}
+
+.todo_item > button {
   display: flex;
-  padding-left: 2px;
-  /* padding-right: 200px; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  gap: 2rem;
-  z-index: 10;
-  position: absolute;
-
+  align-items: center;
+  gap: 12px;
+  background: transparent; /* kills white box */
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
 }
+
+.todo_item  p{
+  background-color: transparent;
+}
+
+
+.todo_item svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid beige;
+  border-radius: 100%;
+}
+
 
 
 .edit-form input {
