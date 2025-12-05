@@ -127,7 +127,7 @@ header {
 .todo_item,
 .edit-form input {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   height: 70px;
   width: 100%;
@@ -137,7 +137,25 @@ header {
   background-color: #0d0d0d;
   color: #fff;
   padding: 12px;
+  position: relative;
+ 
+
 }
+.todo_item svg {
+  background-color: transparent;
+   /* height:0; */
+  display: flex;
+  padding-left: 2px;
+  /* padding-right: 200px; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  gap: 2rem;
+  z-index: 10;
+  position: absolute;
+
+}
+
+
 .edit-form input {
   outline: transparent;
   width: calc(100% - 14px);
