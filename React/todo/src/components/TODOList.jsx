@@ -1,14 +1,15 @@
 import React from "react";
 
-const TODOList = ({ todos }) => {
+const TODOList = ({ todos, setTodos }) => {
   function Item({ item }) {
+    const completeTodo = () => {};
     return (
       <li id={item?.id} className="todo_item">
         <button>
           {/* <svg>
             <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998" />
           </svg> */}
-          <p className="item-title" >{item?.title} </p>
+          <p className="item-title">{item?.title} </p>
         </button>
 
         <div className="todo_items_right">
@@ -29,7 +30,7 @@ const TODOList = ({ todos }) => {
   return (
     <ol className="todo_list">
       {todos && todos.length > 0 ? (
-        todos?.map((item, index) => <Item key={index} item={item} />)
+        todos?.map((item, index) => <Item key={item.id} item={item} />)
       ) : (
         <p>so lonley here. what do you think ? </p>
       )}
