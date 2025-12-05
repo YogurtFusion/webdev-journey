@@ -31,6 +31,10 @@ function Item({ item, setTodos }) {
     setEditing(false);
   };
 
+  const handleDelete = ()=>{
+    setTodos((prevTodos)=>prevTodos.filter((todo)=>todo.id !== item.id))
+  }
+
   useEffect(() => {
     if (editing && inputRef.current) {
       inputRef.current.focus();
@@ -75,7 +79,7 @@ function Item({ item, setTodos }) {
               <span className="material-symbols-outlined">edit</span>
             </button>
 
-            <button>
+            <button onClick={handleDelete}>
               <span className="visually-hidden">Delete</span>
               <span className="material-symbols-outlined">delete_forever</span>
             </button>
@@ -91,7 +95,7 @@ const TODOList = ({ todos, setTodos }) => {
     <ol className="todo_list">
       {todos && todos.length > 0 ? (
         todos?.map((item, index) => (
-          <Item key={item.id} item={item} setTodos={setTodos} />
+          <Item key={index} item={item} setTodos={setTodos} todos={todos} />
         ))
       ) : (
         <p>so lonley here. what do you think ? </p>

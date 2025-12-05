@@ -18,7 +18,7 @@ export default function Home() {
     <div className="wrapper">
       <Header />
       <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
-      <Form  setTodos={SetTodos} />
+      <Form  setTodos={SetTodos} todos={todos} />
       <TODOList todos={todos} setTodos={SetTodos} />
     </div>
   );

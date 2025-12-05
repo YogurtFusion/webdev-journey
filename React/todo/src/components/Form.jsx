@@ -1,13 +1,17 @@
 import React from "react";
 
-const Form = ({ setTodos }) => {
+const Form = ({todos , setTodos }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target.todo.value;
-    setTodos((prevTodos) => [
-      ...prevTodos,
-      { title: value, id: crypto.randomUUID(), is_completed: false },
-    ]);
+    const newTodo = {
+      title: value,
+      id: crypto.randomUUID(),
+      is_completed: false,
+    };
+    setTodos((prevTodos) => [...prevTodos, newTodo]);
+    const updatedTodoList = JSON.stringify([...todos, newTodo])
+    localStorage.setItem("todos", updatedTodoList)
     e.target.reset();
   };
   return (
