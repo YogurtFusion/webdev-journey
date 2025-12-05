@@ -12,6 +12,9 @@ function Item({ item, setTodos }) {
           : todos
       )
     );
+
+    const updatedTodos = JSON.stringify(todos)
+    localStorage.setItem("todos", updatedTodos)
   };
 
   const handleEdit = () => {
@@ -28,11 +31,19 @@ function Item({ item, setTodos }) {
 
   const handleInputSubmit = (event) => {
     event.preventDefault();
+ 
+    const updatedTodos = JSON.stringify(todos)
+    localStorage.setItem("todos", updatedTodos)
     setEditing(false);
   };
 
   const handleDelete = ()=>{
     setTodos((prevTodos)=>prevTodos.filter((todo)=>todo.id !== item.id))
+
+    const updatedTodos = JSON.stringify(
+      todos.filter((todo)=>todo.id !== item.id)
+    )
+    localStorage.setItem("todos", updatedTodos)
   }
 
   useEffect(() => {
