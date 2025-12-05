@@ -9,6 +9,15 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [todos, SetTodos] = useState([]);
 
+  useEffect(() => {
+    
+  const storedTodos = localStorage.getItem("todos")
+  if (storedTodos){
+    SetTodos(JSON.parse(storedTodos))
+  }
+  }, [])
+  
+
   const todos_completed = todos.filter(
     (todo) => todo.is_completed === true
   ).length;
