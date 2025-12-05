@@ -56,7 +56,7 @@ const TODOList = ({ todos, setTodos }) => {
                 name="edit-todo"
                 id="edit-todo"
                 defaultValue={item?.title}
-                onBlur={handleInputBlur}
+                // onBlur={handleInputBlur}
                 onChange={handleInputChange}
               />
             </label>
