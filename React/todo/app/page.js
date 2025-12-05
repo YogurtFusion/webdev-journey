@@ -9,18 +9,6 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [todos, SetTodos] = useState([]);
 
-  //   useEffect(()=>{
-  //     SetTodos([
-  //     { title: "some task", id: crypto.randomUUID(), is_completed: false },
-  //     {
-  //       title: "some other task",
-  //       id: crypto.randomUUID(),
-  //       is_completed: true,
-  //     },
-  //     {title: "last task", id: crypto.randomUUID(), is_completed: false},
-  //   ]);
-  // }, [])
-
   const todos_completed = todos.filter(
     (todo) => todo.is_completed === true
   ).length;
@@ -29,7 +17,7 @@ export default function Home() {
   return (
     <div className="wrapper">
       <Header />
-      <TODOHero todos_completed={todos_completed} total_todos={todos_completed} />
+      <TODOHero todos_completed={todos_completed} total_todos={total_todos} />
       <Form  setTodos={SetTodos} />
       <TODOList todos={todos} setTodos={SetTodos} />
     </div>

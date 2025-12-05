@@ -1,18 +1,17 @@
 import React from "react";
 
-const Form = ({setTodos}) => {
+const Form = ({ setTodos }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target.todo.value;
-    setTodos((prevTodos)=>[
+    setTodos((prevTodos) => [
       ...prevTodos,
-      {title: value, id: crypto.randomUUID(), is_completed: false}
-    ])
+      { title: value, id: crypto.randomUUID(), is_completed: false },
+    ]);
     e.target.reset();
   };
   return (
-    
-    <form className="form" onSubmit={handleSubmit}  >
+    <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="todo">
         <input
           type="text"
@@ -24,10 +23,8 @@ const Form = ({setTodos}) => {
       <button>
         {/* <span>Submit</span> */}
         <span className="material-symbols-outlined">add</span>
-   
       </button>
     </form>
-    
   );
 };
 
