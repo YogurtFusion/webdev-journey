@@ -1,6 +1,49 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import localFont from "next/font/local";
+
+const poppins = localFont({
+  src: "./fonts/Poppins-ExtraBold.ttf",
+  variable: "--font-poppins",
+  weight: "800",
+});
 
 export default function Home() {
-  return <div>I'm main</div>;
+  return (
+    <main className="bg-purple-100">
+      <section className="grid grid-cols-2 h-[50vh] ">
+        <div className="flex flex-col gap-4 items-center justify-center">
+          <p className={`text-3xl font-bold ${poppins.className}`}>
+            The best URL shortener in the market
+          </p>
+          <p className={`${poppins.className} `}>
+            We are the most straightforward URL shortener in the world. Most of
+            the url shorteners will track you or ask you to give your details
+            for login. We understand your needs and hence we have created this
+            URL shortener
+          </p>
+          <div className="flex gap-3 justify-start">
+            <Link href={"/genrate"}>
+              <button className="bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold text-white ">
+                Try Now
+              </button>
+            </Link>
+            <Link href={"/Github"}>
+              <button className="bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold text-white">
+                Github
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex justify-start relative">
+          <Image
+            className="mix-blend-darken"
+            alt="office image"
+            src={"/vector.jpg"}
+            fill={true}
+          />
+        </div>
+      </section>
+    </main>
+  );
 }
