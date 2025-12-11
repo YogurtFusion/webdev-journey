@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const poppins = localFont({
   src: "./fonts/Poppins-ExtraBold.ttf",
@@ -16,14 +17,14 @@ export default function Home() {
           <p className={`text-3xl font-bold ${poppins.className}`}>
             The best URL shortener in the market
           </p>
-          <p className={`${poppins.className} `}>
+          <p className={` px-32 text-center `}>
             We are the most straightforward URL shortener in the world. Most of
             the url shorteners will track you or ask you to give your details
             for login. We understand your needs and hence we have created this
             URL shortener
           </p>
           <div className="flex gap-3 justify-start">
-            <Link href={"/genrate"}>
+            <Link href={"/shorten"}>
               <button className="bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold text-white ">
                 Try Now
               </button>
