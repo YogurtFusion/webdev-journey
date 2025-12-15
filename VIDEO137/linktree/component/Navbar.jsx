@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" flex justify-between items-center bg-white w-[80vw]  fixed top-10  mx-auto right-0 left-0 rounded-full py-5  px-7  ">
+    <nav className=" flex justify-between items-center bg-white w-[80vw]  fixed top-10  mx-auto right-0 left-0 rounded-full py-5  px-7 border ">
       <div className="logo flex gap-20 justify-between items-center ">
         <img
           className=" h-8"
@@ -16,12 +16,15 @@ const Navbar = () => {
           <li> learn</li>
           <li> Pricing</li>
         </ul>
-      
       </div>
       <div className="flex gap-10 font-bold ">
-          <button className="login hover:bg-gray-200 bg-gray-100 p-4 rounded-lg ">Log in </button>
-          <button className="signup bg-gray-900 text-white p-4 rounded-full"> Sign up free</button>
-        </div>
+        <button className="login hover:bg-gray-200 bg-gray-100 p-4 rounded-lg ">
+          Log in
+        </button>
+        <button className="signup bg-gray-900 text-white p-4 rounded-full">
+          Sign up free
+        </button>
+      </div>
     </nav>
   );
 };
