@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "revisiting the backend and make concepts strong",
+  "homepage": "https://github.com/YogurtFusion/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/YogurtFusion/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YogurtFusion/Backend.git"
+  },
+  "license": "ISC",
+  "author": "Your mom's boyfriend",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1"
+  }
+}
