@@ -13,10 +13,10 @@
   "license": "ISC",
   "author": "Your mom's boyfriend",
   "type": "module",
-  "main": "src/index.js",
+  "main": "C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js",
   "scripts": {
-      "start": "node src/index.js",
-      "dev": "nodemon src/index.js"
+    "start": "node C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js",
+    "dev": "nodemon C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
