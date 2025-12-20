@@ -1,6 +1,6 @@
 import { User } from "../models/user.model.js";
 
-const requestUser = async (req, res) => {
+const registerUser = async (req, res) => {
   try {
     const { username, email, password } = req.body;
 // basic validation
@@ -34,5 +34,5 @@ const requestUser = async (req, res) => {
 };
 
 export {
-    requestUser
+    registerUser
 }

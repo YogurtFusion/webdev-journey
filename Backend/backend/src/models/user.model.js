@@ -1,6 +1,4 @@
 import mongoose, { Schema } from 'mongoose'
-import Email from 'next-auth/providers/email'
-import { unique } from 'next/dist/build/utils'
 
 const userSchema = new Schema(
     {
