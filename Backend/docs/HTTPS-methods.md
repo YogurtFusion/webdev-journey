@@ -83,3 +83,7 @@ DELETE /users/123
     <td>✅</td>
   </tr>
 </table>
+
+![alt text](image.png)
+
+![alt text](image-1.png)
