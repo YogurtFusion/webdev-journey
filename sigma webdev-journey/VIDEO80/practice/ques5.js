@@ -1,1 +1,0 @@
-// use getts & seeter to set and get the real and imaginary part's of the complex no. 
