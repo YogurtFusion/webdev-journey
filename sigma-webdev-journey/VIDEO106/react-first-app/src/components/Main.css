@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(243, 243, 243);
+    width: 600px;
+    height: 60vh;
+    margin: 4rem auto;
+    object-fit: cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card p {
+    padding-top: 2rem;
+}
+

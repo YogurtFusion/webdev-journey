@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav {
+        @apply bg-purple-700 text-white flex md:justify-between flex-col md:flex-row min-h-10 }
+    
+    .logo{
+        @apply  mx-auto md:mx-0 
+    }
+
+    .ul{
+        @apply flex space-x-1 justify-center md:justify-normal
+    }
+}

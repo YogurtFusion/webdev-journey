@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "revisiting the backend and make concepts strong",
+  "homepage": "https://github.com/YogurtFusion/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/YogurtFusion/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YogurtFusion/Backend.git"
+  },
+  "license": "ISC",
+  "author": "Your mom's boyfriend",
+  "type": "module",
+  "main": "C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js",
+  "scripts": {
+    "start": "node C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js",
+    "dev": "nodemon C:/workspace/01code cluster/sigma webdev-journey/Backend/backend/src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.2",
+    "nodemon": "^3.1.11"
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+    max-width: 25vw;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.red {
+    color: red;
+    background: #000;
+
+}
+
+.input {
+    background: powderblue;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    border-radius: 10px;
+    margin: auto 20px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    color: azure;
+    cursor: pointer;
+}
